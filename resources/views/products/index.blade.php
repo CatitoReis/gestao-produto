@@ -12,9 +12,15 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
 
-                <form method="GET" action="{{ route('products.index') }}" class="mb-6 flex gap-2">
+            @if (session('success'))
+                <div class="mb-4 p-4 bg-green-100 border-l-4 border-green-500 text-green-700 shadow-sm">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
+                <form method="GET" action="{{ route('dashboard') }}" class="mb-6 flex gap-2">
                     <input type="text" name="search" placeholder="Buscar por nome ou descrição..."
                            value="{{ request('search') }}"
                            class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm w-full">
@@ -41,10 +47,10 @@
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $product->stock_quantity }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                         <a href="{{ route('products.edit', $product) }}" class="text-indigo-600 hover:text-indigo-900 mr-3">Editar</a>
-                                        <form action="{{ route('products.destroy', $product) }}" method="POST" class="inline">
+                                        <form action="{{ route('products.destroy', $product) }}" method="POST" class="inline" onsubmit="return confirm('Tem certeza que deseja excluir este produto?')">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="text-red-600 hover:text-red-900" onclick="return confirm('Tem certeza?')">Excluir</button>
+                                            <button type="submit" class="text-red-600 hover:text-red-900">Excluir</button>
                                         </form>
                                     </td>
                                 </tr>

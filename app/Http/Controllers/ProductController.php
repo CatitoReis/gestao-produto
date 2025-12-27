@@ -32,7 +32,7 @@ class ProductController extends Controller
     {
         $this->productService->createProduct($request->validated());
 
-        return redirect()->route('products.index')
+        return redirect()->route('dashboard')
             ->with('success', 'Produto cadastrado com sucesso!');
     }
 
@@ -50,7 +50,7 @@ class ProductController extends Controller
     {
         $this->productService->updateProduct($product, $request->validated());
 
-        return redirect()->route('products.index')
+        return redirect()->route('dashboard')
             ->with('success', 'Produto atualizado com sucesso!');
     }
 
@@ -58,7 +58,7 @@ class ProductController extends Controller
     {
         $this->productService->deleteProduct($product);
 
-        return redirect()->route('products.index')
+        return redirect()->route('dashboard')
             ->with('success', 'Produto removido com sucesso!');
     }
 }

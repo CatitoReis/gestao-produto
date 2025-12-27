@@ -23,9 +23,9 @@ A aplicação consiste em um painel administrativo completo onde usuários auten
    docker-compose up -d **ou** ./vendor/bin/sail up -d
 
 3. **Preparar o ambiente interno:**
-   ./vendor/bin/sail composer install
-   ./vendor/bin/sail npm install
-   ./vendor/bin/sail npm run build
+   - ./vendor/bin/sail composer install
+   - ./vendor/bin/sail npm install
+   - ./vendor/bin/sail npm run build
 
 4. **Executar migrações e Seeds:**
    ./vendor/bin/sail artisan migrate --seed

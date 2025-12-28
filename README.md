@@ -14,10 +14,24 @@ A aplicação consiste em um painel administrativo completo onde usuários auten
 
 ---
 
+## Pré-requisitos e Ambiente
+
+Para garantir que a aplicação rode corretamente, certifique-se de cumprir os seguintes requisitos:
+
+1. **Docker Desktop**: Instalado e em execução.
+2. **WSL2 (Windows Subsystem for Linux)**: Se você estiver no **Windows**, é **obrigatório** executar os comandos dentro de um terminal Linux (ex: Ubuntu). Rodar o Sail diretamente no PowerShell ou CMD pode causar erros de permissão e de execução.
+rode o comando: wsl --install
+3. **Composer**: Necessário para instalar as dependências iniciais e gerar a pasta `vendor`.
+
 ## Siga os passos abaixo para rodar o projeto em seu ambiente local utilizando Docker:
 
 1. **Clonar o repositório:**
    git clone https://github.com/CatitoReis/gestao-produto.git
+
+2. **confuguração variavies de ambiente:**
+   - Certifique-se de que o arquivo .env existe (copie de .env.example se necessário)
+   - Defina a chave de criptografia na variavel de ambiente APP_KEY=base64:sua-chave-aqui no .env
+   -exemplo: laravel.test php artisan key:generate
 
 2. **Subir os containers Docker:**
    docker-compose up -d **ou** ./vendor/bin/sail up -d

@@ -22,9 +22,8 @@ Para garantir que a aplicação rode sem erros de permissão ou de caminho, siga
 2.  **WSL2 (Obrigatório no Windows)**: Execute os comandos **sempre** dentro do terminal Linux.
 
 3.  **Permissões do Docker**: Caso receba erro de `permission denied` ao tentar rodar o Docker no terminal, execute:
-    ``
     sudo usermod -aG docker $USER && newgrp docker
-    ```
+    
 
 ---
 
@@ -36,7 +35,7 @@ Siga os passos abaixo no seu terminal Linux (WSL):
 ``
 git clone https://github.com/CatitoReis/gestao-produto.git
 
-2. ### Instalar dependências iniciais (Sem PHP local)
+### 2. Instalar dependências iniciais (Sem PHP local)
 
 Se você não tem PHP ou Composer instalado diretamente no seu Ubuntu, use este comando para rodar um container temporário que fará a instalação para você:
 

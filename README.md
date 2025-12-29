@@ -57,11 +57,10 @@ cp .env.example .env (tenha certeza que seu .env está igual ao .env.example)
 ### 5. Finalizar a Preparação do Ambiente
 Com os containers rodando, execute os comandos finais de configuração:
 
-./vendor/bin/sail artisan key:generate
-./vendor/bin/sail npm install
-./vendor/bin/sail npm run build
-./vendor/bin/sail artisan migrate --seed
-./vendor/bin/sail npm run dev
+ - ./vendor/bin/sail artisan key:generate
+ - ./vendor/bin/sail npm install
+ - ./vendor/bin/sail npm run build
+ - ./vendor/bin/sail artisan migrate --seed
 
 ## Execução da aplicação
 

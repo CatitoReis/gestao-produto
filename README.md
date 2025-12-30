@@ -32,7 +32,7 @@ Para garantir que a aplicação rode sem erros de permissão ou de caminho, siga
 Siga os passos abaixo no seu terminal Linux (WSL):
 
 ### 1. Clonar o repositório
-``
+
 git clone https://github.com/CatitoReis/gestao-produto.git
 
 ### 2. Instalar dependências iniciais (Sem PHP local)
@@ -68,24 +68,29 @@ Com os containers rodando, execute os comandos finais de configuração:
 
 ## Execução de Testes
 
-O projeto conta com testes automatizados para garantir a integridade das regras de negócio:
+Para rodar os testes unitários execute o comando:
 ./vendor/bin/sail artisan test
 
 ## Prints de telas/endpoints
-![Página inicial do Sistema](screenshots\paginaInicial.jpg)
-![Página de registro de conta](screenshots\registroConta.jpg)
-![Página de login](screenshots\login.jpg)
-![Dashboard](screenshots\dashboard.jpg)
-![Cadastro de novo produto](screenshots\cadastroProduto.jpg)
-![Produto listado](screenshots\produtoListado.jpg)
-![Lista com Produtos cadastrados](screenshots\lista.jpg)
-![Erro de produto com valor negativo](screenshots\erroValorNegativo.jpg)
-![Editar Produto](screenshots\editarProtudo.jpg)
-![Produto editado/atualizado](screenshots\produtoAtualizado.jpg)
-![Produto removido](screenshots\produtoRemovido.jpg)
-![Filtro pesquisa por Nome](screenshots\pesquisaProdutoNome.jpg)
-![Filtro pesquisa por Descrição](screenshots\pesquisaProdutoDescricao.jpg)
-![Filtro pesquisa por Preço](screenshots\pesquisaProdutoPreco.jpg)
+### 🔐 Autenticação e Início
+| Página Inicial | Registro | Login |
+| :---: | :---: | :---: |
+| ![Página inicial](screenshots/paginaInicial.jpg) | ![Registro](screenshots/registroConta.jpg) | ![Login](screenshots/login.jpg) |
+
+### 📦 Gestão de Produtos
+| Dashboard | Cadastro | Listagem Completa |
+| :---: | :---: | :---: |
+| ![Dashboard](screenshots/dashboard.jpg) | ![Cadastro](screenshots/cadastroProduto.jpg) | ![Lista](screenshots/lista.jpg) |
+
+### 🛠 Funcionalidades e Validações
+| Erro Valor Negativo | Edição de Produto | Produto Removido |
+| :---: | :---: | :---: |
+| ![Erro](screenshots/erroValorNegativo.jpg) | ![Editar](screenshots/editarProtudo.jpg) | ![Removido](screenshots/produtoRemovido.jpg) |
+
+### 🔍 Filtros de Pesquisa
+| Por Nome | Por Descrição | Por Preço |
+| :---: | :---: | :---: |
+| ![Nome](screenshots/pesquisaProdutoNome.jpg) | ![Descrição](screenshots/pesquisaProdutoDescricao.jpg) | ![Preço](screenshots/pesquisaProdutoPreco.jpg) |
 
 
 

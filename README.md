@@ -71,3 +71,33 @@ Com os containers rodando, execute os comandos finais de configuração:
 O projeto conta com testes automatizados para garantir a integridade das regras de negócio:
 ./vendor/bin/sail artisan test
 
+## Prints de telas/endpoints
+![Página inicial do Sistema](screenshots\paginaInicial.jpg)
+![Página de registro de conta](screenshots\registroConta.jpg)
+![Página de login](screenshots\login.jpg)
+![Dashboard](screenshots\dashboard.jpg)
+![Cadastro de novo produto](screenshots\cadastroProduto.jpg)
+![Produto listado](screenshots\produtoListado.jpg)
+![Lista com Produtos cadastrados](screenshots\lista.jpg)
+![Erro de produto com valor negativo](screenshots\erroValorNegativo.jpg)
+![Editar Produto](screenshots\editarProtudo.jpg)
+![Produto editado/atualizado](screenshots\produtoAtualizado.jpg)
+![Produto removido](screenshots\produtoRemovido.jpg)
+![Filtro pesquisa por Nome](screenshots\pesquisaProdutoNome.jpg)
+![Filtro pesquisa por Descrição](screenshots\pesquisaProdutoDescricao.jpg)
+![Filtro pesquisa por Preço](screenshots\pesquisaProdutoPreco.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

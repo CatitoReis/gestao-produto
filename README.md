@@ -72,22 +72,22 @@ Para rodar os testes unitários execute o comando:
 ./vendor/bin/sail artisan test
 
 ## Prints de telas/endpoints
-### 🔐 Autenticação e Início
+### Autenticação e Início
 | Página Inicial | Registro | Login |
 | :---: | :---: | :---: |
 | ![Página inicial](screenshots/paginaInicial.jpg) | ![Registro](screenshots/registroConta.jpg) | ![Login](screenshots/login.jpg) |
 
-### 📦 Gestão de Produtos
+### Gestão de Produtos
 | Dashboard | Cadastro | Listagem Completa |
 | :---: | :---: | :---: |
 | ![Dashboard](screenshots/dashboard.jpg) | ![Cadastro](screenshots/cadastroProduto.jpg) | ![Lista](screenshots/lista.jpg) |
 
-### 🛠 Funcionalidades e Validações
+### Funcionalidades e Validações
 | Erro Valor Negativo | Edição de Produto | Produto Removido |
 | :---: | :---: | :---: |
 | ![Erro](screenshots/erroValorNegativo.jpg) | ![Editar](screenshots/editarProtudo.jpg) | ![Removido](screenshots/produtoRemovido.jpg) |
 
-### 🔍 Filtros de Pesquisa
+### Filtros de Pesquisa
 | Por Nome | Por Descrição | Por Preço |
 | :---: | :---: | :---: |
 | ![Nome](screenshots/pesquisaProdutoNome.jpg) | ![Descrição](screenshots/pesquisaProdutoDescricao.jpg) | ![Preço](screenshots/pesquisaProdutoPreco.jpg) |

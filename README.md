@@ -68,7 +68,6 @@ Com os containers rodando, execute os comandos finais de configuração:
 
 ## Execução de Testes
 
-Para rodar os testes unitários execute o comando:
 ./vendor/bin/sail artisan test
 
 ## Prints de telas/endpoints
